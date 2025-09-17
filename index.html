@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>javascript Cv assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Image and Name -->
+  <button id="toggleImageBtn" onclick="toggleSection('imageSection', 'toggleImageBtn', 'Image and Name')">
+    View Image and Name
+  </button>
+  <div id="imageSection" class="section hidden">
+    <img src="/profile.jpg" class="profile-img" alt="Profile Image">
+    <h2>Muhammad Altaf</h2>
+    <p></p>
+  </div>
+
+  <!-- Details Section -->
+  <button id="toggleDetailsBtn" onclick="toggleSection('detailsSection', 'toggleDetailsBtn', 'Details')">
+    View Details
+  </button>
+  <div id="detailsSection" class="section hidden">
+    <h3>Personal Detail</h3>
+    <p>Karachi Pakistan</p>
+    <p>zmaltaf99@gmail.com</p>
+    <p>03042336731</p>
+    <h4>My Skills</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+  </div>
+
+  <!-- Form Section -->
+  <button id="toggleFormBtn" onclick="toggleSection('formSection', 'toggleFormBtn', 'Contact Form')">
+    View Contact Form
+  </button>
+  <div id="formSection" class="section hidden">
+    <form id="contactForm">
+      <input type="text" id="name" placeholder=" Enter your Name">
+      <br>
+      <input type="email" id="email" placeholder="Enter your Email">
+      <br>
+      <textarea id="message" placeholder="Message"></textarea>
+      <br>
+      <p id="error" class="error-message"></p>
+      <p id="success" class="success-message"></p>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

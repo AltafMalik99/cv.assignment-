@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button {
+  margin: 10px 0;
+  padding: 8px 12px;
+  border: 1px solid #333;
+  background: white;
+  cursor: pointer;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0%;
+  display: block;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%;              
+  max-width: 400px;         
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
